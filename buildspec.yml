@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+  pre_build:
+    commands:
+      - echo Hello from PRE_BUILD PHASE
+  build:
+    commands:
+      - echo BUILD PHASE started on `date`
+      - cat /etc/issue
+  post_build:
+    commands:
+      - echo Hello from POST_BUILD PHASE
+artifacts:
