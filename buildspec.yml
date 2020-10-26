@@ -9,6 +9,7 @@ phases:
     commands:
       - echo BUILD PHASE started on `date`
       - java -version
+      
   post_build:
     commands:
       - echo Hello from POST_BUILD PHASE
